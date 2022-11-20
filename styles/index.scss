@@ -5,6 +5,12 @@
     color: white;
 }
 
+button:hover {
+    transition: 0.5s ease;
+    background-color: #1f46f8;
+}
+
+
 header {
     background-image: url(/images/header.png);
     max-width: 100%;
@@ -89,11 +95,6 @@ input {
     font-size: 16px;
     text-transform: uppercase;
     display: flex;
-}
-
-.btn-search:hover {
-    transition: 0.7s ease;
-    background-color: #1f46f8;
 }
 
 .fa-magnifying-glass {
@@ -220,14 +221,9 @@ h2 {
     border-color: #5474FD;
     cursor: pointer;
     font-family: 'Aleo', serif;
-    font-weight: 400; 
+    font-weight: 400;
     font-size: 16px;
     transform: translateX(-8rem);
-}
-
-.btn-explore:hover {
-    transition: 0.5s ease;
-    background-color: #1f46f8;
 }
 
 .grid-btn {
@@ -273,6 +269,7 @@ h2 {
     max-width: 100%;
     min-height: 340px;
 }
+
 /*
 .icons {
     display: grid;
@@ -304,39 +301,123 @@ h2 {
 }
 */
 
-
-
-
-
-
 .section2 {
     background-image: url(/images/section2.png);
     background-size: auto 100%;
     max-width: 100%;
     height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
+.spain1 {
+    width: 543px;
+    height: 374px;
+    background: #232323d5;
+    mix-blend-mode: normal;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 
+.small-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    color: #E8E8E8;
+    margin: 40px 15px 30px;
+}
 
+.grand-madrid-spain {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 15px;
+}
 
+.content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #E8E8E8;
+    margin: 15px;
+}
 
+.btn-book-now {
+    width: 228px;
+    height: 63px;
+    background: #5473fd;
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 15px;
+    border: #5473fd;
+}
 
 .section3 {
     background-image: url(/images/section3.png);
     background-size: auto 100%;
     max-width: 100%;
     height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 }
 
-
-
-
+.spain2 {
+    width: 543px;
+    height: 374px;
+    background: #232323d5;
+    mix-blend-mode: normal;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
 
 .section4 {
     background-image: url(/images/section4.png);
     background-size: auto 100%;
     max-width: 100%;
     height: 100vh;
+
+}
+
+.tourist {
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 26px;
+    text-align: center;
+    transform: translateY(10rem);
+}
+
+.review {
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 100%;
+    height: 50rem;
+}
+
+.sam-sumon {
+    width: 668px;
+    height: 287px;
+    background: #333333;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 5;
 }
 
 
@@ -371,6 +452,7 @@ h3 {
     line-height: 26px;
 }
 
-.social, a {
+.social,
+a {
     text-decoration: none;
 }
