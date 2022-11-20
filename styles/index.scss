@@ -1,7 +1,7 @@
 * {
     margin: auto;
     padding: 0;
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
 }
 
@@ -9,10 +9,118 @@ header {
     background-image: url(/images/header.png);
     max-width: 100%;
     min-height: 100vh;
-    background-size: contain;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: repeat(9, 1 fr);
     grid-template-rows: repeat(9, 1fr);
     grid-gap: 10px;
+    box-sizing: border-box;
+}
+
+.logo,
+h1 {
+    box-sizing: border-box;
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 26px;
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+.safe-travel {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 6.82px;
+    color: #FFFFFF;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+.search {
+    display: flex;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+form,
+input {
+    display: flex;
+    border: none;
+    width: 503px;
+    height: 63px;
+    outline: none;
+    border-style: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.8px;
+    color: #4e4e4e;
+    text-align: center;
+}
+
+.btn-search {
+    width: 150px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px;
+    cursor: pointer;
+    background: #5474FD;
+    border: 7px solid white;
+    color: #FFFFFF;
+    font-family: 'Aleo', serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.btn-search:hover {
+    transition: 0.7s ease;
+    background-color: #1f46f8;
+}
+
+.fa-magnifying-glass {
+    color: #FFFFFF;
+    font-weight: 900;
+}
+
+.scroll {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    color: #FFFFFF;
+    letter-spacing: 2.8px;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 9;
+}
+
+.down {
+    grid-row-start: 7;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    transform: translateY(-70px);
+}
+
+.scroll,
+.down {
+    cursor: pointer;
+    padding: 10px;
 }
